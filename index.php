@@ -19,7 +19,7 @@ fclose($file);
  */
 // TODO Votre code ici
 $table = ["bonjour", "comment", "ca", "va", "?", "Moi", "je", "vais", "bien"];
-$file = fopen('monFichier.txt', 'r+b');
+$file = fopen('monFichier.txt', 'a+b');
 fwrite($file, $table."\n");
 fclose($file);
 
@@ -28,7 +28,7 @@ fclose($file);
  * 5. Trouvez une solution pour afficher à l'aide d'un simple echo l'extension du fichier index.php
  */
 // TODO Votre code ici
-echo nl2br(file_get_contents("monFichier.txt"));
+echo nl2br(file_get_contents("monFichier.txt"))."<br>";
 
 
 /**
